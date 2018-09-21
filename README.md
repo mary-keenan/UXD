@@ -1,11 +1,21 @@
-## Team Ice Cream Scoop: Helping You Move Since 2018
+# Team Ice Cream Scoop: Helping You Move Since 2018
 
 
+## Inspirational Designs
+
+### Sortly (by Ilya)
+Sortly is an online service specializing in inventory in the context of organization, moving and general tracking purposes for businesses and individuals. In the moving category, their slogan is Stress Less During Your Move - keep calm and move comfortably knowing where everything is packed.
+
+#### Visual Tracking
+Sortly’s app allows customers to create lists and visually document their items to make them easier to track. Users can create custom notes for each item or box and tag it by location or category. They can even create scannable QR codes to label each box with specific contents. Part of the apps functionality allows users to distinguish which items they care deeply for and which they are looking to get rid of during the move.
+
+#### Design
+Their website is modern and fluid, a pleasure to look through. They use a friendly, empathetic tone in addressing their customers. Their awareness of the common stress and difficulties of moving is clear. They want to make people’s lives easier and turn difficult tasks into enjoyable experiences.
+
+![Image](src)
 
 
-
-
-### Consent Form
+## Consent Form
 
 #### Who are we?
 We are a group of students from Olin College of Engineering taking a course in User Experience Design. Our team is researching moving pains with the goal of using our findings to develop a solution with a positive user experience.
