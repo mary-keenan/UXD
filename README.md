@@ -14,6 +14,19 @@ Their website is modern and fluid, a pleasure to look through. They use a friend
 
 ![Image](src)
 
+### MagicPlan (by Mary)
+MagicPlan uses pictures to create detailed floor plans, which it can then use to create quotes for construction and generate annotated reports (for those using the service for business). It allows new homeowners/renters to plan out where everything will go in their new home, so they don’t end up moving furniture or other items they’ll get rid of anyway. This approach to simplifying the moving process offers a few insights. 
+
+First, not everyone will move everything from one place to another, so helping them realize what they won’t need in their new home ahead of time will make moving inherently easier (because there will be less to move). If we’re trying to help them differentiate between boxes, we can do so by decreasing the number of boxes of stuff they have. 
+
+Second, manually entering information is tedious, especially if you have a large number of belongings. I was able to use the MagicPlan app to map the bathroom and living room of my suite in about three minutes once I figured out how the app worked, which was much faster than measuring each wall, entering that into some piece of software, then explaining how the walls relate to each other, and so on. We should come up with more creative ways to collect the information we need.
+
+Third, the MagicPlan app has a lot of different functionalities (like creating quotes), which could be useful, but ends up making the app feel cluttered and unintuitive. It was easy to map the rooms, but beyond that, the app was confusing -- for example, why does the app have a whole separate cost section for tax information instead of building tax information into its quoted prices? Plus, it never asked where my supposed house is, but I imagine it needs that information for taxes and I don’t know how to add my address. If I only want to create a floor plan, what information do I actually need to add? We should create a software solution to moving headaches that does its single job and nothing more to make the experience more straightforward. 
+
+![Image](src)
+
+
+
 
 ## Consent Form
 
