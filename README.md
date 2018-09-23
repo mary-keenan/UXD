@@ -14,7 +14,7 @@ Their website is modern and fluid, a pleasure to look through. They use a friend
 
 ![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
 
-![sortly](images/sortly.png)
+![sortly](images/sortly2.png)
 
 ### MagicPlan (by Mary)
 MagicPlan uses pictures to create detailed floor plans, which it can then use to create quotes for construction and generate annotated reports (for those using the service for business). It allows new homeowners/renters to plan out where everything will go in their new home, so they don’t end up moving furniture or other items they’ll get rid of anyway. This approach to simplifying the moving process offers a few insights. 
