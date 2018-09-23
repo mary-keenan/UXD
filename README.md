@@ -27,6 +27,21 @@ Third, the MagicPlan app has a lot of different functionalities (like creating q
 
 ![sortly](images/magicplan.png)
 
+### Moverbase (by Bill)
+Moverbase is a web based software that helps manage the operation of moving companies. In order to gain access to a variety of features, moving companies need to pay 0-299 USD per month to subscribe to the software. The basic functionalities include work scheduling, job management, staff management, client management, supplies calculator and quick email services between the mover and the client. This software builds up an interface for moving companies to better manage their job. However, I can hardly see it being popular, since it is neither for big moving companies that have their own database and online software, nor for small companies that do not require such a complex cloud system to operate. There is a lot of detailed information displayed on the dashboard, but the user interface is a bit messy, and the software website looks a lot better than the dashboard. This software aims to do all the things to manage a moving company, but it doesn’t do everything very well. Furthermore, there’s no custom features that fit companies own needs. There is no review for the web version of the product and very few reviews (less than 5) on Google Play. 
+
+![sortly](images/moverbase.png)
+
+
+
+### Other Ideas
+- Unpakt helps you book, manage, and pay for your move within the mobile/web app; lets you create an inventory list to see how much it’ll cost to move certain items and shows you multiple quotes
+- Flip is an app that helps tenants find credible subletters and deal with the landlord; “Flip is an advocate, assistant, and housing expert all rolled into one” -- Business Insider
+- Moved is a free app that pairs you with a personal assistant to help you organize/execute your move via text
+- ThredUP helps you get rid of old clothes and make some money; sends a huge plastic bag with prepaid return shipping, which you fill up and send back (what they don’t buy, they donate)
+- Moving Checklist Pro comes with a list of tasks you need for moving (like finding nearby doctors, banks, cell phone providers, DMV, cancelling services, changing address for newspapers, etc)
+
+
 
 
 ## Consent Form
