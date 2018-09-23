@@ -64,12 +64,9 @@ We don’t expect any risk to you. We won’t collect personal information or pe
 
 #### How can you contact us?
 If you’d like to speak to us further, you can reach us at:
-
-Mary Keenan: mary.keenan@students.olin.edu
-
-Ilya Besancon: ilya.besancon@students.olin.edu
-
-Bill Du: bill.du@students.olin.edu
+- Mary Keenan: mary.keenan@students.olin.edu
+- Ilya Besancon: ilya.besancon@students.olin.edu
+- Bill Du: bill.du@students.olin.edu
 
 
 #### Head faculty:
