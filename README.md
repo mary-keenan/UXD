@@ -12,7 +12,7 @@ Sortly’s app allows customers to create lists and visually document their item
 #### Design
 Their website is modern and fluid, a pleasure to look through. They use a friendly, empathetic tone in addressing their customers. Their awareness of the common stress and difficulties of moving is clear. They want to make people’s lives easier and turn difficult tasks into enjoyable experiences.
 
-![Image](src)
+![sortly](https://github.com/mary-keenan/UXD/blob/master/sortly.jpg)
 
 ### MagicPlan (by Mary)
 MagicPlan uses pictures to create detailed floor plans, which it can then use to create quotes for construction and generate annotated reports (for those using the service for business). It allows new homeowners/renters to plan out where everything will go in their new home, so they don’t end up moving furniture or other items they’ll get rid of anyway. This approach to simplifying the moving process offers a few insights. 
@@ -23,7 +23,6 @@ Second, manually entering information is tedious, especially if you have a large
 
 Third, the MagicPlan app has a lot of different functionalities (like creating quotes), which could be useful, but ends up making the app feel cluttered and unintuitive. It was easy to map the rooms, but beyond that, the app was confusing -- for example, why does the app have a whole separate cost section for tax information instead of building tax information into its quoted prices? Plus, it never asked where my supposed house is, but I imagine it needs that information for taxes and I don’t know how to add my address. If I only want to create a floor plan, what information do I actually need to add? We should create a software solution to moving headaches that does its single job and nothing more to make the experience more straightforward. 
 
-![https://github.com/mary-keenan/UXD/sortly.jpg](https://github.com/mary-keenan/UXD/sortly.jpg)
 
 
 
