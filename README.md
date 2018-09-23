@@ -12,7 +12,7 @@ Sortly’s app allows customers to create lists and visually document their item
 #### Design
 Their website is modern and fluid, a pleasure to look through. They use a friendly, empathetic tone in addressing their customers. Their awareness of the common stress and difficulties of moving is clear. They want to make people’s lives easier and turn difficult tasks into enjoyable experiences.
 
-![sortly](https://github.com/mary-keenan/UXD/blob/master/sortly.jpg)
+![sortly](images/sortly.jpg?raw=true)
 
 ### MagicPlan (by Mary)
 MagicPlan uses pictures to create detailed floor plans, which it can then use to create quotes for construction and generate annotated reports (for those using the service for business). It allows new homeowners/renters to plan out where everything will go in their new home, so they don’t end up moving furniture or other items they’ll get rid of anyway. This approach to simplifying the moving process offers a few insights. 
