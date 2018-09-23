@@ -72,7 +72,7 @@ Ilya Besancon: ilya.besancon@students.olin.edu
 Bill Du: bill.du@students.olin.edu
 
 
-**Head Faculty:**
+#### Head faculty:
 
 Marco Morales: 	marco.morales@olin.edu
 
