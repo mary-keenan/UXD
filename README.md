@@ -2,7 +2,7 @@
 
 
 ## Design Brief
-![url](design_brief.pdf)
+![Design Brief](design_brief.pdf)
 
 ## Inspirational Designs
 
