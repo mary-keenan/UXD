@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Team Ice Cream Scoop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/cayman.css">
+    <style> .indented { padding-left: 50pt; padding-right: 50pt; } </style>
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Team Ice Cream Scoop</h1>
+      <h2 class="project-tagline">Helping You Move Since 2018</h2>
+    </section>
+
+    <section class="main-content">
+    <h2 id="design-brief">Design Development Report</h2>
+      <h3>1 Initial Exploration</h3>
+        <div class="indented">
+          <h4>1.1 Ideas</h4>
+            <p>
+              abc
+            </p>
+          <h4>1.2 Choice</h4>
+            <p>
+              abc
+            </p>
+        </div>
+      <h3>2 Paper Prototype Development</h3>
+        <div class="indented">
+          <h4>2.1 Design</h4>
+            <p>
+              abc
+            </p>
+          <h4>2.2 Functionality and Flow</h4>
+            <p>
+              abc
+            </p>
+          <h4>2.3 User Needs</h4>
+            <p>
+              abc
+            </p>
+        </div>
+      <h3>3 Usability Testing</h3>
+        <p>
+          We conducted usability tests with five college students using our paper prototype. Before testing, we wrote a script and formatted a spreadsheet for logging feedback to ensure consistency and make it easier to compare results. During testing, we identified a few minor but common sources of confusion. As a result, we made a few small changes to our paper prototype for the remaining user tests, so the user wouldn’t be distracted by the minor pain points and we could get better feedback. After testing concluded, we examined the feedback and identified common themes.
+        </p>
+        <div class="indented">
+          <h4>3.1 Test Design</h4>
+            <p>
+              The core of our test design is our user testing script (linked to here). Our script contains an introduction to our project as well as a description of our app in a hypothetical App store to introduce our specific product, Take This Photo (now renamed HomePhoto). This provides the user context for the test. Once the user has heard about the project and read the description, we show them the paper prototype and give a short description of the information we want from them: to identify the good and bad parts of our software and give us photo ideas. We then ask the user to do three tasks that encompass the three main functions of our product: reviewing old albums, viewing the in-progress album, and adding new pictures to the in-progress album. This is when the usability test really starts. 
+            </p>
+            <p>
+              While the user tries to accomplish these tasks, the interviewer takes notes and questions the user if they seem stuck or do something unexpected. The tasks are intended to help us identify unintuitive aspects of our workflow and test our assumption that the app is easy to use. After the three tasks have been completed, we ask the user a series of questions laid out in the script about their experience using the app, etcetera, to get general information unrelated to workflow that could improve our product. We conclude the test by thanking the user and offering them contact information in case they later have further feedback on our product.
+            </p>
+            <p>
+              We have a second, complementary component to our test: a spreadsheet for logging feedback. Every user gets their own column in the spreadsheet, and each row is a question from the script plus one row for additional feedback. This makes it easy for us to directly compare users’ feedback, which is especially useful given none of us was present for all five tests. You can find the spreadsheet with our unprocessed feedback <a href="https://github.com">here</a>.
+            </p>
+          <h4>3.2 Changes During Testing</h4>
+            <p>
+              After conducting four user interviews, it became evident that there were a few minor, easy-to-fix points of confusion in our prototype. Namely, our naming. In our original paper prototype, the three buttons on the home screen are named “View Templates”, “My Progress”, and “Past Albums”. These buttons represent the photo-taking, current-album-viewing, and old-album-viewing functions of our app, respectively. Users had no difficulty figuring out which button to click to view old albums but generally felt that the other two labels were unclear. While “progress” denotes something that is current, it’s a roundabout way of saying “current” -- and current what? Is it referring to your progress in moving? Multiple users found “My Progress” to be too vague to be helpful. “View Templates” was even more confusing to users, as it didn’t imply action, such as taking photos, so much as passively reviewing templates. Renaming these two buttons was an easy fix, and we decided to rename them before testing was complete; we didn’t need more feedback to know they were problems, and we didn’t want our users to miss another issue because they were hung up on the labels. We renamed “View Templates” to XX and “My Progress” to YY.
+            </p>
+            <p>
+              There was also a user who, understandably in hindsight, tried to click the name of our app, “Take This Photo”, to take a photo. This, plus additional feedback that the name didn’t make it clear this was an app related to moving, convinced us to change our name mid-testing. We chose “HomePhoto” after some ideation. However, in the usability test after this change, the user thought “HomePhoto” was a home button. So, new problem!
+            </p>
+          <h4>3.3 Results</h4>
+            <p>
+              Once testing concluded, we began processing the feedback. We had believed that the paper prototype met users’ needs by being intuitive, simple, valuable, and accessible to all photography skill levels but that it also fell short in that it could be time-intensive and not suitable to casual use. 
+            </p>
+            <p>
+              After conducting usability tests, it’s clear that, counter to our assumptions, our paper prototype is not intuitive. This is largely due to the naming issue mentioned in the prior subsection, so hopefully our changes will improve ease of navigation, but it was still unclear what, for example, blank photos represent in “My Progress”. Our users validated our belief that the app did something valuable: help users preserve important memories. However, our original assumptions were further challenged by feedback that our app both had unnecessary functionality (slideshows) as well as lacked functionality that would give the user more freedom in how they create albums, arrange them, and use them. The app was both not simple enough and too simple.
+            </p>
+            <p> We identified a few common themes in our feedback: </p>
+            <ul>
+              <li>Our paper prototype has poor naming and signifiers for buttons.</li>
+              <li>Ideal screen size may differ by age; older users will likely prefer using tablets to phones.</li>
+              <li>Our app has little flexibility; the user’s choices are constrained to the point that the app may not be worth using.</li>
+              <li>Users want the ability to use photos and albums in the app outside of the app; for example, they want to be able to save photos they take to their camera roll and share albums on social media.</li>
+              <li>The idea of templates is confusing; the app may need a tutorial walkthrough to make its functionality more clear.</li>
+            </ul>
+
+        </div>
+      <h3>4 Proposed Design</h3>
+        <div class="indented">
+          <h4>4.1 Changes to Design</h4>
+            <p>
+              abc
+            </p>
+          <h4>4.2 User Needs</h4>
+            <p>
+              abc
+            </p>
+          <h4>4.3 Limitations</h4>
+            <p>
+              abc
+            </p>
+        </div>
+      <h3>5 Key Insights</h3>
+        <p></p>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      <h3>6 Limitations</h3>
+        <p></p>
+
+
+
+      <h3>Effort Chart (for the last two phases)</h3>
+        <p>We've generally all been putting in the same amount of time as each other for the various activities. We normally split tasks up, like the sketches, so that helps to make sure we're all doing each activity -- no one is ever unable to help because of scheduling conflicts.</p>
+        <p><img src="images/effort_chart.png" alt="effort" style="width:60%"></p>
+      <h2 id="design-brief">Design Brief</h2>
+        <h3> The Problem </h3>
+          <p>
+          When we move, we lose a part of our lives and move on to something different. We change living spaces, neighborhoods and sometimes adopt entirely different lifestyles. This experience can be incredibly difficult and overwhelming for many people. The biggest factor we’ve identified that percolates throughout this process is emotional attachment to one’s experiences. Whether you’re traveling with a suitcase or moving into a second family home, there is are a lot of belongings, memories, habits that you cannot hold onto or bring with you. The frustration that comes from this seems to be unresolved and a strong pain point throughout our users. We’d like to find a way to capture key experiences (physical or non-physical) for our users by providing a software experience to fulfill their needs. By interacting with this software, we hope our users will come to think of the moving experience as something painless and positive. They will be able to prevent the loss of what is most important to them about the living experience they’re leaving behind.
+          </p>
+        <h3> Narrative Grounding </h3>
+          <p>
+          We interviewed nine people about their moving experiences to pinpoint common pain points, and after placing them on a two-spectrum map, we were able to identify three groupings and translate them into personas that represent our broader “people who are moving” user group. One scale of our two-spectrum map was utilitarian → sentimental and the other was excited (about moving) → dreading (moving). We found that three people fell into a very utilitarian and very excited group, two fell into a slightly less utilitarian group that dreaded moving, and the other four were loosely grouped within the sentimental and dreading moving space. As such, we formed three personas: Mobile Molly, Static Stacy, and Sentimental Sal.
+          </p>
+          <p> 
+          Mobile Molly is good at moving and enjoys it, whereas Static Stacey and Sentimental Sal struggle to organize, find moving stressful, and dislike the whole process. While Mobile Molly and Sentimental Sal were on opposite sides of the two axes of our spectrum, we found that they actually both struggled with the same problem: preserving key experiences. Sentimental Sal dislikes moving largely because he’s very attached to his belongings, his home, and his way of life, and moving inevitably means losing at least one of those. Mobile Molly may not dislike moving, but she struggles to hold onto the experiences that motivate her moves in the first place. Finding a solution in this problem space could help many types of people within our broader user group, regardless of differing motivations, responsibilities, and ages. However, it seems likely that one obstacle to helping our users address this moving pain will be their willingness to adopt new technology in addition to accepting a new home, new life, and potentially many other new things. If our software solution requires too much activation energy, it won’t get used.
+          </p>
+        <h3> Design Artifacts </h3>
+          <h4> Spectrum </h4>
+            <p><img src="images/spectrum.jpg" alt="spectrum" style="width:50%"></p>
+          <h4> Personas </h4>
+            <table width="100%">
+            <tr>
+              <td><img src="images/persona_stan.jpg" alt="persona1"></td>
+              <td align="center"><img src="images/persona_stacy.jpg" alt="persona2"></td>
+              <td align="right"><img src="images/persona_molly.jpg"></td>
+            </tr>
+          </table>
+
+      <h2 id="inspirational-designs">Inspirational Designs</h2>
+        <h3 id="sortly-by-ilya-">Sortly (by Ilya)</h3>
+          <p>Sortly is an online service specializing in inventory in the context of organization, moving and general tracking purposes for businesses and individuals. In the moving category, their slogan is Stress Less During Your Move - keep calm and move comfortably knowing where everything is packed.</p>
+          <h4 id="visual-tracking">Visual Tracking</h4>
+          <p>Sortly’s app allows customers to create lists and visually document their items to make them easier to track. Users can create custom notes for each item or box and tag it by location or category. They can even create scannable QR codes to label each box with specific contents. Part of the apps functionality allows users to distinguish which items they care deeply for and which they are looking to get rid of during the move.</p>
+          <h4 id="design">Design</h4>
+          <p>Their website is modern and fluid, a pleasure to look through. They use a friendly, empathetic tone in addressing their customers. Their awareness of the common stress and difficulties of moving is clear. They want to make people’s lives easier and turn difficult tasks into enjoyable experiences.</p>
+          <p><img src="images/sortly2.png" alt="sortly"></p>
+        <h3 id="magicplan-by-mary-">MagicPlan (by Mary)</h3>
+          <p>MagicPlan uses pictures to create detailed floor plans, which it can then use to create quotes for construction and generate annotated reports (for those using the service for business). It allows new homeowners/renters to plan out where everything will go in their new home, so they don’t end up moving furniture or other items they’ll get rid of anyway. This approach to simplifying the moving process offers a few insights. </p>
+          <p>First, not everyone will move everything from one place to another, so helping them realize what they won’t need in their new home ahead of time will make moving inherently easier (because there will be less to move). If we’re trying to help them differentiate between boxes, we can do so by decreasing the number of boxes of stuff they have. </p>
+          <p>Second, manually entering information is tedious, especially if you have a large number of belongings. I was able to use the MagicPlan app to map the bathroom and living room of my suite in about three minutes once I figured out how the app worked, which was much faster than measuring each wall, entering that into some piece of software, then explaining how the walls relate to each other, and so on. We should come up with more creative ways to collect the information we need.</p>
+          <p>Third, the MagicPlan app has a lot of different functionalities (like creating quotes), which could be useful, but ends up making the app feel cluttered and unintuitive. It was easy to map the rooms, but beyond that, the app was confusing -- for example, why does the app have a whole separate cost section for tax information instead of building tax information into its quoted prices? Plus, it never asked where my supposed house is, but I imagine it needs that information for taxes and I don’t know how to add my address. If I only want to create a floor plan, what information do I actually need to add? We should create a software solution to moving headaches that does its single job and nothing more to make the experience more straightforward. </p>
+          <p><img src="images/magicplan.png" alt="sortly"></p>
+        <h3 id="moverbase-by-bill-">Moverbase (by Bill)</h3>
+          <p>Moverbase is a web based software that helps manage the operation of moving companies. In order to gain access to a variety of features, moving companies need to pay 0-299 USD per month to subscribe to the software. The basic functionalities include work scheduling, job management, staff management, client management, supplies calculator and quick email services between the mover and the client. This software builds up an interface for moving companies to better manage their job. However, I can hardly see it being popular, since it is neither for big moving companies that have their own database and online software, nor for small companies that do not require such a complex cloud system to operate. There is a lot of detailed information displayed on the dashboard, but the user interface is a bit messy, and the software website looks a lot better than the dashboard. This software aims to do all the things to manage a moving company, but it doesn’t do everything very well. Furthermore, there’s no custom features that fit companies own needs. There is no review for the web version of the product and very few reviews (less than 5) on Google Play. </p>
+          <p><img src="images/moverbase.png" alt="sortly"></p>
+        <h3 id="other-ideas">Other Ideas</h3>
+          <ul>
+          <li>Unpakt helps you book, manage, and pay for your move within the mobile/web app; lets you create an inventory list to see how much it’ll cost to move certain items and shows you multiple quotes</li>
+          <li>Flip is an app that helps tenants find credible subletters and deal with the landlord; “Flip is an advocate, assistant, and housing expert all rolled into one” -- Business Insider</li>
+          <li>Moved is a free app that pairs you with a personal assistant to help you organize/execute your move via text</li>
+          <li>ThredUP helps you get rid of old clothes and make some money; sends a huge plastic bag with prepaid return shipping, which you fill up and send back (what they don’t buy, they donate)</li>
+          <li>Moving Checklist Pro comes with a list of tasks you need for moving (like finding nearby doctors, banks, cell phone providers, DMV, cancelling services, changing address for newspapers, etc)</li>
+          </ul>
+      <h2 id="consent-form">Consent Form</h2>
+        <h4 id="who-are-we-">Who are we?</h4>
+          <p>We are a group of students from Olin College of Engineering taking a course in User Experience Design. Our team is researching moving pains with the goal of using our findings to develop a solution with a positive user experience.</p>
+        <h4 id="what-do-we-want-from-you-">What do we want from you?</h4>
+          <p>We’d like to speak to you about your moving experiences and possibly receive feedback on prototypes. Your feedback is crucial to us creating a positive user experience. Engineering doesn’t happen in a bubble; your input from people outside of our project will help us look at our ideas in new ways and challenge our assumptions. We respect your time and anticipate this interaction will last less than a half hour.</p>
+          <p>We will collect information by...</p>
+          <ul>
+          <li>Taking notes</li>
+          <li>Taking photos</li>
+          <li>Recording audio</li>
+          <li>Recording video</li>
+          <li>Keeping artifacts created during co-design</li>
+          </ul>
+        <h4 id="what-are-the-risks-or-benefits-">What are the risks or benefits?</h4>
+          <p>We don’t expect any risk to you. We won’t collect personal information or personally identify you when we talk about our project to others. Additionally, you are free at any time to leave, change topics, or request we not use the anonymous information we do collect if for any reason you feel uncomfortable. These conversations are purely voluntary, and no monetary compensation will be offered. However, there will be the added benefit to you of knowing that your opinions directly help us in our learning!</p>
+        <h4 id="how-can-you-contact-us-">How can you contact us?</h4>
+          <p>If you’d like to speak to us further, you can reach us at:</p>
+          <ul>
+          <li>Mary Keenan: <a href="mailto:mary.keenan@students.olin.edu">mary.keenan@students.olin.edu</a></li>
+          <li>Ilya Besancon: <a href="mailto:ilya.besancon@students.olin.edu">ilya.besancon@students.olin.edu</a></li>
+          <li>Bill Du: <a href="mailto:bill.du@students.olin.edu">bill.du@students.olin.edu</a></li>
+          </ul>
+        <h4 id="head-faculty-">Head faculty: Marco Morales</h4>
+          <ul>
+            <li>Email: <a href="mailto:marco.morales@olin.edu">marco.morales@olin.edu</a></li>
+            <li>Phone number: (619) 243-6059</li>
+          </ul>
