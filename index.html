@@ -19,29 +19,51 @@
     <section class="main-content">
     <h2 id="design-brief">Design Development Report</h2>
       <h3>1 Initial Exploration</h3>
+        <p>
+          At the beginning of design development phase, we revisited the insights we gained from our user interviews during need analysis phase. We came up with many different ideas that help improve our users’ moving experience based on those insights and we picked four ideas to evaluate. We started with an idea that helps people solve logistic problems of moving, but we decided to pivot ideas because we were chose to address a deeper problem. We made sketches for the remaining 3 ideas and evaluated them against our users’ needs. Finally we picked the best option to turn into a prototype.
+        </p>
         <div class="indented">
           <h4>1.1 Ideas</h4>
             <p>
-              abc
+              <strong>A helper tool for figuring out the logistics of moving.</strong>
+              A lot of people (especially Static Stacey) hate moving because they find it troublesome to solve the common logistical problems of moving, such as “I don’t have friends to help me carry things”, “I don’t know how to rent a moving truck”, “I’m not sure how to pack all my things”. However, there are a lot of pre-existing software solutions to those problems. Some of the problems are trivial to solve and already have perfectly functioning solutions, while others can only be solved by keeping people motivated to move. Therefore, we decided not to pursue this idea because we wanted to dive deeper into the problems behind the logistic problems of moving.
             </p>
-          <h4>1.2 Choice</h4>
             <p>
-              abc
+              <strong>An experience capture app using AR/VR that recreates people’s past living experience.</strong>
+              Two of our three personas, Static Stacy and Sentimental Sal dislike moving because they struggle with the same problem: preserving key experiences. They struggle to hold on to their old life and they need motivation to move on to new life. Therefore, we started on this idea to focus on capturing experiences. This is an app that captures people’s experience in the form of pictures and videos, and creates an AR/VR version of the experience for people to keep and revisit whenever they want. This was an interesting idea in that it redefines what it means to experience lives from the past. That being said, there are a lot of technical limitations in how to capture enough data to create an AR/VR representation of a life in a home. Both for that and reasons relating to project scope led us to picking a different idea, but this is where we shifted our ideas into the direction of experience capture. 
             </p>
+            <p><img src="images/bill_flow.png" alt="bill sketch"></p>
+            <p>
+              <strong>An app that automatically create albums for your time living in a certain place.</strong>
+              This is another app that focuses on experience capture. The idea behind it was that people are busy, and people might not want to spend time and effort on taking photos and recording videos of their daily live, so this app could help them by automatically constructing an album with photos from their time living in a certain place using the photos on their phone. This seemed more feasible than the VR/AR app. However, this idea did not feel particularly new, since, for example, Google Photos will automatically construct collages or albums based on details like location and time, so we decided not to bring it to the prototype stage. For more photos of the sketches, click <a href="https://github.com/mary-keenan/UXD/blob/master/appendix/mary_home.png">here</a> and <a href="https://github.com/mary-keenan/UXD/blob/master/appendix/mary_new.png">here</a>
+            </p>
+            <p><img src="images/mary_flow.png" alt="mary sketch"></p>
+            <p>
+              <strong>Take this Photo (now HomePhoto).</strong>
+              This is a camera app that motivates people to capture their valuable moments throughout the entire moving process. Whether it’s before the move, during the move, or after settling down at a new place, this app will help people take pictures of their family, their house, and their moving experience with templates provided in the app. The app will create albums for their past moves, and therefore making it easier for people to hold on to their old live and prepare themselves to embrace the new live. This idea addresses the deeper problem behind the logistic problems of moving that both Static Stacey and Sentimental Sal have: preserving key experiences, and the scope of this app meets our expectation. We finally decided to bring this idea to the next step after reevaluating all the other ideas.
+            </p>
+            <p><img src="images/ilya_flow.png" alt="ilya sketch"></p>
         </div>
       <h3>2 Paper Prototype Development</h3>
         <div class="indented">
           <h4>2.1 Design</h4>
             <p>
-              abc
+              With HomePhoto, we make it easy to remind and help capture the special moments you will cherish further down the road. Whether someone is moving or in the process, our app suggests a multitude of fun, thoughtful photo ideas for users to use in capturing important moments. 
+            </p>
+            <p>
+              We generated a paper prototype to represent the main concepts of our idea. We used pens and smartphone-sized paper to sketch out the multiple pages and functionality of our mobile application. We did our best to address user needs in an engaging manner.
             </p>
           <h4>2.2 Functionality and Flow</h4>
             <p>
-              abc
+              From the home-page, users have a choice between accessing templates, viewing their progress in completing an album, or exploring past moves. If they want to capture a moment, the user can click into templates, select one of their choosing and use it as inspiration for their shot. Once captured, they can confirm its addition to their “current move” album. They can view this album with the “my progress” button on the home-screen. This will show them a pleasing layout with pictures they have taken and grayed-out slots of photo templates they haven’t taken yet. Below you can see an interaction flow map for our first prototype (green lines represent clicks).
             </p>
+            <p><img src="images/workflow.png" alt="workflow"></p>
           <h4>2.3 User Needs</h4>
             <p>
-              abc
+              Our user needs were of clear concern in creating this initial paper prototype. Whether it is Sentimental Sal, Static Stacy or Mobile Molly who is using it, we decided to focus on an intuitive, engaging interface, capturing valuable memories and decreasing the photography skills necessary to have a pleasing output. All three of our personas are people who appreciate their lives being made easy. This inspired the high amount of automation in our design: photo templates with overlay guides that feed into pre-designed collages allow for an output users will want to share with families and friends. In addition, Sentimental Sal makes it clear how important it is to cherish what is important to us. Our “Templates” page aims to be an easy to follow guide in reminding users to capture moments they will gladly look back on in the future. 
+            </p>
+            <p>
+              Our prototype doesn’t address every need, however. Mobile Molly and Static Stacy aren’t easily motivated and it currently takes an engaged user to get the most out of HomePhoto. Additionally, most young adults don’t have the patience to complete a task over the course of days/weeks, and a full “Photo Puzzle” is time consuming to fill. That being said, our prototype is a solid start for user testing. We will focus on the insights we gain from our user interviews in bettering our next iteration.
             </p>
         </div>
       <h3>3 Usability Testing</h3>
@@ -61,7 +83,7 @@
             </p>
           <h4>3.2 Changes During Testing</h4>
             <p>
-              After conducting four user interviews, it became evident that there were a few minor, easy-to-fix points of confusion in our prototype. Namely, our naming. In our original paper prototype, the three buttons on the home screen are named “View Templates”, “My Progress”, and “Past Albums”. These buttons represent the photo-taking, current-album-viewing, and old-album-viewing functions of our app, respectively. Users had no difficulty figuring out which button to click to view old albums but generally felt that the other two labels were unclear. While “progress” denotes something that is current, it’s a roundabout way of saying “current” -- and current what? Is it referring to your progress in moving? Multiple users found “My Progress” to be too vague to be helpful. “View Templates” was even more confusing to users, as it didn’t imply action, such as taking photos, so much as passively reviewing templates. Renaming these two buttons was an easy fix, and we decided to rename them before testing was complete; we didn’t need more feedback to know they were problems, and we didn’t want our users to miss another issue because they were hung up on the labels. We renamed “View Templates” to XX and “My Progress” to YY.
+              After conducting four user interviews, it became evident that there were a few minor, easy-to-fix points of confusion in our prototype. Namely, our naming. In our original paper prototype, the three buttons on the home screen are named “View Templates”, “My Progress”, and “Past Albums”. These buttons represent the photo-taking, current-album-viewing, and old-album-viewing functions of our app, respectively. Users had no difficulty figuring out which button to click to view old albums but generally felt that the other two labels were unclear. While “progress” denotes something that is current, it’s a roundabout way of saying “current” -- and current what? Is it referring to your progress in moving? Multiple users found “My Progress” to be too vague to be helpful. “View Templates” was even more confusing to users, as it didn’t imply action, such as taking photos, so much as passively reviewing templates. Renaming these two buttons was an easy fix, and we decided to rename them before testing was complete; we didn’t need more feedback to know they were problems, and we didn’t want our users to miss another issue because they were hung up on the labels. We renamed “View Templates” to “Capture”, “My Progress” to “View Current Move”, and for consistency, “Past Albums” to “View Past Moves”.
             </p>
             <p>
               There was also a user who, understandably in hindsight, tried to click the name of our app, “Take This Photo”, to take a photo. This, plus additional feedback that the name didn’t make it clear this was an app related to moving, convinced us to change our name mid-testing. We chose “HomePhoto” after some ideation. However, in the usability test after this change, the user thought “HomePhoto” was a home button. So, new problem!
@@ -84,18 +106,41 @@
 
         </div>
       <h3>4 Proposed Design</h3>
+        <p>
+         In response to the feedback we received during usability testing, we updated our design. Because we have limited time and resources, we will not be able to make all of the requested changes, so we tried to ensure that the changes we included would have the biggest impact, or “bang for our buck”. In part because we only tested with five users, it was difficult to judge how important different pieces of feedback were to our larger user group, so it is quite likely that we did not prioritize as effectively as we could have had we done more extensive testing.
+        </p>
         <div class="indented">
           <h4>4.1 Changes to Design</h4>
             <p>
-              abc
+              There are three categories for the changes we decided to make to our design: added functionality, removed functionality, and unimplemented functionality. Within the added functionality category, there are three changes we are making:
+            </p>
+            <ul>
+              <li>Increased customization (adding pictures, removing pictures, and reordering pictures in albums)</li>
+              <li>Importing pictures (retroactively creating albums and adding pictures other people took)</li>
+              <li>Exporting pictures (downloading or sharing the album on social media)</li>
+            </ul>
+            <p>
+              As far as removed functionality is concerned, the only functionality we are removing is the slideshow; we received mixed feedback on its usefulness and felt that it complicated what is intended to be a simple app without adding much value, particularly now that users will be able to export their albums. 
+            </p>
+            <p>
+              The unimplemented functionality category refers to a gap in our original workflow; we never decided what would happen if users tried to click on shaded-out photos -- we asked during testing, and the consensus was that there should be a pop-up with the option to take a photo for that template -- and as this is simply a basic function of the app, adding it was not a choice so much as a requisite.
+            </p>
+            <p>
+              As a result of the functionality we chose to change and other feedback, we decided to rework the main workflow of the app so that the homepage of the app now only has two buttons: “Capture” and “View Moves”. “View Moves” essentially combines the functionality of “View Current Move” and “View Past Moves” by letting users view and edit any album, including one they may be currently building as well as older albums they may be updating. This workflow will better utilize new functionality like importing and allow for more flexibility, a common theme in our feedback.
             </p>
           <h4>4.2 User Needs</h4>
             <p>
-              abc
+              We expect that this new workflow, as well as the changes to our button names, will make our app more intuitive to use since there are fewer and more clearly labeled options for navigation. Making our app intuitive is important given many of our users are likely short for time, particularly Sentimental Sal, who has a full-time job and children (which is a second full-time job!). Similarly, removing the slideshow option is intended to simplify our app even as its abilities increase, so the users can focus their scattered-brains on what’s really important: capturing memories, not playing them slowly on their phones when they could export them quickly and do that elsewhere. 
+            </p>
+            <p>
+              The additions of album customization, importing, and exporting are all intended to increase the usefulness of our app, and therefore the value our users derive from it. Our users are using the app to capture important memories, and we are helping them do so by giving them more flexibility in how they capture those memories and share them.
             </p>
           <h4>4.3 Limitations</h4>
             <p>
-              abc
+              Unfortunately, our lack of time and person-power meant that we were not going to be able to make all of the changes we wanted. One suggestion we chose not to implement was adding a tutorial. Our app was not as intuitive to users in the usability tests as we had expected, and it seemed like adding a tutorial walkthrough when users first open the app could remedy some of the confusion. However, we decided that simple, well-designed apps should not need tutorials; they should be intuitive enough that the user can experiment with them for a few minutes and quickly get the hang of the workflow and functionality. Rather than waste time developing a treatment for a symptom of bad design, we decided to focus our efforts addressing the cause of the issue by making the changes mentioned above. Ideally, however, we would have both created an optional tutorial and improved our design to give users a choice in how they learn about the app.
+            </p>
+            <p>
+              Two other changes we chose not to implement were adding a settings page and filters. While they are obviously both useful and popular functionality, we felt they would take as much time to implement as album customization, importing, and exporting but offer less value. Static Stacy could care less about adding filters to photos and Sentimental Sal is likely less familiar with them, since he is older and doesn’t use apps like Snapchat. Similarly, settings are generally an integral part of applications, but not one that particularly excites people or encourages them to use an app. If we were intending to release this app soon, we would definitely include a settings page, but for now, it has less value-add than the changes we’ve decided to make and will be kept on the back burner.
             </p>
         </div>
       <h3>5 Key Insights</h3>
@@ -106,8 +151,20 @@
           <li></li>
         </ul>
       <h3>6 Limitations</h3>
-        <p></p>
-
+        <p>
+        Provided a limited time working on the project, we had two big limitations concluding this phase.
+        </p>
+        <ul>
+          <li>
+            We could have multiple iterations of our paper prototype. We made a revised version of our original paper prototype based on our first usability test, but more iterations of our paper prototype experimenting more with layout/flow and different amounts of functionality would be helpful. 
+          </li>
+          <li>
+            We did not do usability test with people who were about to or currently moving. Although we obtained more feedback from our users because we did not exclusively look for people who are in the moving process, we could have a more direct feedback if we could interview those people.
+          </li>
+        </ul>
+        <p>
+          Despite the limitations above, we made good progress toward our project goal and we are satisfied with our work and our insights gained during this phase of the project.
+        </p>
 
 
       <h3>Effort Chart (for the last two phases)</h3>
