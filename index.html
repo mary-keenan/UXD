@@ -17,6 +17,173 @@
     </section>
 
     <section class="main-content">
+
+    <h2 id="design-brief">Design Refinement Report</h2>
+      <h3>1 Initial Exploration</h3>
+        <p>
+          blah
+        </p>
+        <div class="indented">
+          <h4>1.1 Partial Prototypes</h4>
+            <p>
+              <strong>blah</strong>
+              blah
+            </p>
+            <p>
+              <strong>blah</strong>
+              blah
+            </p>
+            <p>
+              <strong>blah</strong>
+              blah 
+              <a href="https://www.figma.com/file/dEfCWKYO69DZ0PPXup5zJabm/HomePhoto----first-draft"> click here to view Mary's prototype</a>
+            </p>
+    	  <h4>1.2 Narrowing to One</h4>
+            <p>
+              blah
+            </p>
+    	</div>
+      <h3>2 First Prototype</h3>
+	    <p>
+	      The first version of our clickable prototype was simple, but it included each of the eight functions we considered essential for meeting our users’ needs based on previous phase work. We were given the opportunity to get feedback from our peers on this prototype, so we prepared instructions to give context and use case suggestions. To try out our first prototype, you can follow this <a href="https://www.figma.com/proto/aThoEch5OXlj3SNOjq7UMo/HomePhoto-heuristic-evaluation?node-id=31%3A2&scaling=scale-down.">link</a>.
+	     </p>
+        <div class="indented">
+          <h4>2.1 Functionality and Flow</h4>
+            <p>
+            In our Design Development Report, we concluded that there were three changes we could make to our initial paper prototype design that would significantly improve the user’s experience using our app: increased customization, importing pictures, and exporting pictures/albums. This additional functionality combined with the existing basic functions of the paper prototype meant that, at a high-level, there were eight things our app should be able to do:
+            </p>
+            <ol>
+              <li>Take photos with or without a template</li>
+              <li>Save photos to albums</li>
+              <li>Edit photo descriptions</li>
+              <li>View albums</li>
+              <li>Edit albums</li>
+              <li>Create new albums</li>
+              <li>Upload photos from camera roll into new or existing albums</li>
+              <li>Share albums</li>
+            </ol>
+            <p>
+              The clickable prototype essentially divided these functions into two categories -- functions related to taking photos and functions related to viewing photos -- by separating them in the workflow. As the graph below indicates, the only way to get from taking photos (category highlighted in red) to viewing photos (category highlighted in yellow) or vice versa was to go through “home”, with the singular exception of the “saving photos to albums” function, which became available to the user only after they took a photo and decided to keep it. 
+            </p>
+            <p><img src="images/graph_workflow.png" alt="workflow"></p>
+            <p>
+              A highly detailed version of the first prototype’s wireframe is shown below. The colored boxes indicate which frames were used to achieve the eight functions. The color of the boxes indicates which of the two categories the frames/functions fall under -- taking photos (red/pink) or viewing photos (yellow). The different shades of yellow indicate the individual function groupings within the latter category. The frames for the “add photos from camera roll” function fall within two other function groups as adding photos from the camera roll is an action you do while editing or creating albums. The blue lines indicate how the app moves through these frames given certain actions.
+            </p>
+            <p><img src="images/wireframe.png" alt="wireframe"></p>
+          <h4>2.2 Grounding from Earlier Phases</h4>
+            <p>
+              While the three key changes identified in the Design Development Report were each incorporated in the first prototype to some extent, the additional customization was fairly trivial; the only changes from the paper prototype were the added abilities to edit photo captions and album names. This was done for the sake of simplicity, and we have every intention of including the ability to reorder and remove photos at a later point, but it means we did not receive any feedback on our implementation of those behaviors during this phase, which could be problematic going forward. 
+        	</p>
+    	    <p>
+    	      However, we did remove the slideshow function our users had mixed feelings about in an effort to simplify the app and keep it easy to use for our busy movers, and we did comprehensively prototype the ability to import photos from the user’s camera roll, one of our users’ big asks. Additionally, we combined “View Current Move” and “View Past Moves” into “View Albums” in response to user feedback that they want to be able to build upon any album at any time; so, the prototype has no “current album”, all albums are editable, and new photos can be saved to any album. These changes are intended to meet user needs by giving them more flexibility in how they capture their memories.
+    		</p>
+          <h4>2.3 Testing Documentation</h4>
+            <p>
+			  At the halfway point of the phase, we gave our first prototype to another student group for a heuristic evaluation. We created some simple testing documentation to give context about the app’s intended user group, as well as to give an optional high-level overview of the app’s structure. The testing instructions included a list of tasks we thought would give our peers exposure to all parts of the prototype, so they wouldn’t miss any frames or use cases. To view the Heuristic Evaluation Instructions, click <a href="https://github.com/mary-keenan/UXD/blob/master/appendix/Heuristic_Evaluation_Instructions.pdf">here</a>.
+            </p>
+        </div>
+      <h3>3 Feedback</h3>
+        <p>
+          Once our first clickable prototype was sufficiently complete, we began collecting feedback. We submitted our prototype and testing instructions to another student group for a heuristic evaluation, and simultaneously solicited feedback from the teaching team. In response to critique, we did more experimentation with our app’s design, before internally deliberating on what made our app useful to our users and deciding to try something a little different in our refined design.
+        </p>
+        <div class="indented">
+          <h4>3.1 Teaching Team</h4>
+            <p>
+              There were three main sources of confusion for the teaching team member when they clicked around our first prototype: the logo seemed clickable but was not, the overlay was hard to see and the point of it was unclear, and the word “keep” did not have any obvious association to the action of putting a photo into an album. These three points, unfortunately, harken back to some of our usability testing results. During usability testing, our users found the idea of templates confusing, our button names unclear, and, in the last usability test, the logo’s “Home” and “Photo” components to be misleading (because they didn’t take you to the home page and camera page, respectively). We thought that be removing the word “template”, the idea of the overlay would be more intuitive (perhaps it would be seen as a new type of filter), but the teaching team feedback made it clear it was not. While our labelling overall seemed to have improved, we still had some poor choices (such as “keep”), and the return of the logo-confusion suggested we really needed to change or remove our logo from the app. 
+            </p>
+            <p>
+              In addition to this critique, the teaching team member advised we look at Base IOS/Android patterns in terms of global buttons, dropdowns, and bottom (thumb-level) horizontal menus for main actions. He suggested we make our app more accessible by using more of the screen real estate and using different fonts or the same scrawly font we were using but in a larger font-size. The teaching team member also recommended that we think more about the point of this app -- what is the user’s emotional and mental state and how do we want to affect that?
+            </p>
+            <p>
+              While we were waiting to receive our heuristic evaluation, we experimented with different styles of Android navigation, layouts, and actions. Pictured below are a few frames from one of the experimental layouts that used a hamburger menu, FAB buttons, and context-dependent menu bars as well as a new font that was intended to be easier to read. To see the rest of this experimental prototype, click <a href="https://www.figma.com/file/amUjvmWeMTgjoFJwI77vDC/HomePhoto----Android-revamp----Mary?node-id=288%3A20">here</a>.
+            </p>
+            <p><img src="images/exp_prototype_frames.png" alt="frames"></p>
+          <h4>3.2 Peers</h4>
+            <p>
+              Overall, the other student group found our app easy to use during their heuristic evaluation. They thought it was functional without unnecessary features and predictable. However, they were a few key issues.
+            </p>
+            <ul>
+              <li>If a user wants to put a photo they just took into a new album, they can’t do that.</li>
+              <li>If a user wants to take multiple photos, they have to keep navigating back from the album they put them in to the capture page (it doesn’t let them stay there when they save a photo).</li>
+              <li>The logo is misleading -- the “Home” half seems like it should take the user home and the “Photo” half seems like it should take the user to the camera.</li>
+              <li>It’s hard to tell when one photo ends and another begins in the album collage since there are no borders.</li>
+              <li>Inconsistent naming -- some pages use the word “Edit” while other have an edit icon (a pen); similarly, some pages use the word “Complete” to signify saving while other use the word “Keep” (neither of which is usually used to mean “saved”).</li>
+              <li>Needing to navigate through the homepage to go between the two primary actions (capturing and viewing) seems unnecessary (since there are only two primary actions/pages).</li>
+            </ul>
+            <p>
+              Overall, the other team thought our image-capturing workflow could be improved, the division between capture and albums made navigation a headache, the album pages were crowded and hard to read, and we had inconsistent language across different pages. This feedback generally aligned with the teaching team member feedback; one of the three student users also had confusion about the use of the templates and overlays.
+            </p>
+            <p> 
+            	To see the full heuristic evaluation, click <a href="https://github.com/mary-keenan/UXD/blob/master/appendix/Heuristic_Evaluations.pdf">here</a>. 
+            </p>
+          <h4>3.3 In-Team</h4>
+            <p>
+              Our internal feedback was less structured; the most productive team discussion took place when we were deliberating over what would make our refined design most useful to our users. We decided the primary function of our app was to help people curate albums, because people spend more time looking at pictures than they do taking them. As a result, instead of having a homepage, our app should just open to the albums page, albeit with easy access to the capture workflow. 
+            </p>
+            <p>
+              We also discussed the role of templates and realized that the overlay was not useful and frequently confused people, and we briefly considered axing templates. But then we had a small crisis, because we realized that the templates were the only thing that made our app unique from other camera apps. This launched a new round of ideation -- how could we make templates useful for our users? Our answer was to replace templates with “ideas”. We would ask the user a few brief questions and give them a list of photos they could take; for example, if a user was with their family, in the process of moving, we might suggest they take a photo of their family before and after they move, to show the transformation from energetic and excited to exhausted and relieved. If the user likes this idea and selects it, the app will give them a few, non-intrusive, interactive suggestions while they take the photo, like “Make sure everyone’s sweaty face is in the frame” or “Keep the lighting behind you” or “Tell them a joke to get candid smiling”. These suggestions would be small, text overlays on the bottom of the screen, similar to the ones you get in Portrait Mode when it says “move within 3-6 feet for depth effect”. Our hope is that this will resolve the persistent confusion about what templates are and how they work and make our app more intuitive to our users while retaining the app’s uniqueness.
+            </p>
+        </div>
+
+      <h3>4 Refined Design</h3>
+        <p>
+          In response to the feedback we received from the teaching team and our peers, as well as our team-internal discussion, we updated our design. Given our limited time and resources, we will not be able to act on all of the feedback we were given, but we identified some key changes and used those to guide the development of our refined design. Unfortunately, because not all of the behaviors we intend to implement were comprehensively prototyped and tested in this phase, it is possible some of our design work going forward may not be very well-informed. To take a look at our prototype, click <a href="https://drive.google.com/file/d/1_R7VHLNHhSiFY_a8V4tVC5r-Rtsp56H4/view?usp=sharing">here</a> (you'll need to download it with Adobe XD).
+        </p>
+        <div class="indented">
+          <h4>4.1 Changes from First Design</h4>
+            <p>
+              There are a number of differences, big and small, between our refined design and the first clickable prototype and paper prototype. As we mentioned in the previous section, we decided to remove the homepage. Our peers found that navigating through the homepage to get to and from taking photos and viewing photos was inconvenient, and the teaching team feedback to look at the Android style guides gave us the idea to use a thumb-level menu for context-dependent navigation. This makes moving between functions (taking photos, editing albums, etc) easier. The app now opens on the albums page, because that is where we expect our users will spend most of their time -- looking at photos, not taking them.
+            </p>
+            <p>
+              Another big change we made in the refined design was to replace “templates” with “ideas”. This switch was explained in detail in the last section so we will not go into it too much here, but one additional component we added was the ability to skip the ideas workflow, from before or within it, and go straight to capture. This option is indicated with a camera labelled “Capture” in the lower menu bar; the frame is pictured below, on the left.
+            </p>
+            <p><img src="images/final_prototype_frames.png" alt="frames"></p>
+            <p>
+              We also removed the logo to avoid confusing users about it’s use for navigation, switched to a more accessible font, added borders between pictures to make it easier to tell them apart, nixed the inconsistent language around saving (“Keep” is now just “Save”), and shifted to using familiar Android-style menus at the top and bottom of the screen to make actions and navigation more intuitive (pictured above, to the right). We added the options for the user to take multiple photos at a time without needing to navigate back to the camera page and to save photos without needing to place them into a specific album to give the user more flexibility. This was all in response to peer and teaching team feedback mentioned in the Feedback portion of the report. 
+            </p>
+          <h4>4.2 User Needs</h4>
+            <p>
+              We made these changes to our design to better meet our users’ needs. By getting rid of the homepage and adding a context-dependent Android-style menu at thumb-level, we are making navigating around our app faster and more intuitive. This is important, because many of our users do not have much time -- Sentimental Sal has a full-time job and a family, and while he wants to curate these memories, he also has practical concerns like packing. Additionally, sometimes our users need to be able to instantly capture a moment before it goes away (like Sal wanting to get a picture of his kids laughing), and being able to jump to the camera in one-click, even from within the “ideas” flow, meets that need. 
+            </p>
+            <p>
+              On the other hand, sometimes our users, like Mobile Molly, know they want to capture their experience but don’t necessarily know what moments will be important to them later. Molly is experience-driven but inexperienced; she likes moving, but has not moved many times yet. Our “ideas” feature will give her a jumping off point for figuring out what things she wants to remember. By not prescribing a set of chosen templates but providing a set of suggested ideas, our app is more flexible and less overbearing, and meets Molly’s need to be guided but not constrained.
+            </p>
+            <p>
+              Adding more flexibility to how people take photos and save them also improves our users’ experience by giving them more freedom. Because this additional functionality is contained in the top and bottom menu bars, it should be fairly intuitive (because it falls within a consistent format) and not overly complicate the app. Power users can still take photos and edit albums quickly, but now users who want these additional features have access to them.
+            </p>
+          <h4>4.3 Limitations</h4>
+            <p>
+              Unfortunately, we did not prototype as extensively as we had hoped to due to a lack of time and person-power. Our first prototype did not include features like being able to remove or reorder photos in an album, move photos between albums, or save new photos to the camera roll, which were all actions we had planned to include; in fact, none of these actions are available in the refined prototype either. This means we have no formal plan as to how to implement these features and we have not received feedback on a preliminary implementation of them. So if we do have them in our final design, they will not have been evaluated or tested in any way. 
+            </p>
+            <p>
+              On top of this, the transition from “templates” to “ideas” occurred after we received our last feedback, so neither the concept nor the implementation of it have been seen by people outside of our team. We don’t know if the “ideas” workflow is actually less confusing and more intuitive than the “templates” one, and we may not get that answer until after we have invested more time developing the concept. User-testing that change will have to be one of our priorities for the next phase.
+            </p>
+        </div>
+
+      <h3>5 Key Insights</h3>
+        <p>
+          blah
+        </p>
+        <p>
+          blah
+        </p>
+       
+      <h3>6 Limitations</h3>
+        <p>
+        Given a limited time working on the project, we had two big limitations in this phase.
+        </p>
+        <ul>
+          <li>
+            blah
+          </li>
+          <li>
+            blah
+          </li>
+        </ul>
+        <p>
+          Despite the limitations above, we made good progress in this phase and are excited to begin developing a real prototype.
+        </p>
+
     <h2 id="design-brief">Design Development Report</h2>
       <h3>1 Initial Exploration</h3>
         <p>
