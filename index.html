@@ -69,11 +69,11 @@
             <p>
               The clickable prototype essentially divided these functions into two categories -- functions related to taking photos and functions related to viewing photos -- by separating them in the workflow. As the graph below indicates, the only way to get from taking photos (category highlighted in red) to viewing photos (category highlighted in yellow) or vice versa was to go through “home”, with the singular exception of the “saving photos to albums” function, which became available to the user only after they took a photo and decided to keep it. 
             </p>
-            <p><img src="images/graph_workflow.png" alt="workflow"></p>
+            <p><img src="graph_workflow.png" alt="workflow"></p>
             <p>
               A highly detailed version of the first prototype’s wireframe is shown below. The colored boxes indicate which frames were used to achieve the eight functions. The color of the boxes indicates which of the two categories the frames/functions fall under -- taking photos (red/pink) or viewing photos (yellow). The different shades of yellow indicate the individual function groupings within the latter category. The frames for the “add photos from camera roll” function fall within two other function groups as adding photos from the camera roll is an action you do while editing or creating albums. The blue lines indicate how the app moves through these frames given certain actions. As you can see, the bulk of the prototype is in the "viewing photos" space.
             </p>
-            <p><img src="images/wireframe.png" alt="wireframe"></p>
+            <p><img src="wireframe.png" alt="wireframe"></p>
           <h4>2.2 Grounding from Earlier Phases</h4>
             <p>
               While the three key changes identified in the Design Development Report were each incorporated in the first prototype to some extent, the additional customization was fairly trivial; the only changes from the paper prototype were the added abilities to edit photo captions and album names. This was done for the sake of simplicity, and we have every intention of including the ability to reorder and remove photos at a later point, but it means we did not receive any feedback on our implementation of those behaviors during this phase, which could be problematic going forward. 
@@ -101,7 +101,7 @@
             <p>
               While we were waiting to receive our heuristic evaluation, we experimented with different styles of Android navigation, layouts, and actions. Pictured below are a few frames from one of the experimental layouts that used a hamburger menu, FAB buttons, and context-dependent menu bars as well as a new font that was intended to be easier to read. To see the rest of this experimental prototype, click <a href="https://www.figma.com/file/amUjvmWeMTgjoFJwI77vDC/HomePhoto----Android-revamp----Mary?node-id=288%3A20">here</a>.
             </p>
-            <p><img src="images/exp_prototype_frames.png" alt="frames"></p>
+            <p><img src="exp_prototype_frames.png" alt="frames"></p>
           <h4>3.2 Peers</h4>
             <p>
               Overall, the other student group found our app easy to use during their heuristic evaluation. They thought it was functional without unnecessary features and predictable. However, they were a few key issues.
@@ -125,7 +125,7 @@
               Our internal feedback was less structured; the most productive team discussion took place when we were deliberating over what would make our refined design most useful to our users. We decided the primary function of our app was to help people curate albums, because people spend more time looking at pictures than they do taking them. As a result, instead of having a homepage, our app should just open to the albums page, albeit with easy access to the capture workflow. 
             </p>
             <p>
-              We also discussed the role of templates and realized that the overlay was not useful and frequently confused people, and we briefly considered axing templates. But then we had a small crisis, because we realized that the templates were the only thing that made our app unique from other camera apps. This launched a new round of ideation -- how could we make templates useful for our users? Our answer was to replace templates with “ideas”. We would ask the user a few brief questions and give them a list of photos they could take; for example, if a user was with their family, in the process of moving, we might suggest they take a photo of their family before and after they move, to show the transformation from energetic and excited to exhausted and relieved. If the user likes this idea and selects it, the app will give them a few, non-intrusive, interactive suggestions while they take the photo, like “Make sure everyone’s sweaty face is in the frame” or “Keep the lighting behind you” or “Tell them a joke to get candid smiling”. These suggestions would be small, text overlays on the bottom of the screen, similar to the ones you get in Portrait Mode when it says “move within 3-6 feet for depth effect”. Our hope is that this will resolve the persistent confusion about what templates are and how they work and make our app more intuitive to our users while retaining the app’s uniqueness.
+              We also discussed the role of templates and realized that the overlay was not useful and frequently confused people, and we briefly considered axing templates. But then we had a small crisis, because we realized that the templates were the only thing that made our app unique from other camera apps. This launched a new round of ideation -- how could we make templates useful for our users? Our answer was to replace templates with “ideas”. We would ask the user a few brief questions and give them a list of photos they could take; for example, if a user was with their family, in the process of moving, we might suggest they take a photo of their family before and after they move, to show the transformation from energetic and excited to exhausted and relieved. If the user likes this idea and selects it, the app will give them non-intrusive, interactive suggestions while they take the photo, like “Make sure everyone’s sweaty face is in the frame” or “Keep the lighting behind you” or “Tell them a joke to get candid smiling”. These suggestions would be small, text overlays on the bottom of the screen, similar to the ones you get in Portrait Mode when it says “move within 3-6 feet for depth effect”. Our hope is that this will resolve the persistent confusion about what templates are and how they work and make our app more intuitive to our users while retaining the app’s uniqueness.
             </p>
         </div>
 
@@ -141,7 +141,7 @@
             <p>
               Another big change we made in the refined design was to replace “templates” with “ideas”. This switch was explained in detail in the last section so we will not go into it too much here, but one additional component we added was the ability to skip the ideas workflow, from before or within it, and go straight to capture. This option is indicated with a camera labelled “Capture” in the lower menu bar; the frame is pictured below, on the left.
             </p>
-            <p><img src="images/final_prototype_frames.png" alt="frames"></p>
+            <p><img src="final_prototype_frames.png" alt="frames"></p>
             <p>
               We also removed the logo to avoid confusing users about it’s use for navigation, switched to a more accessible font, added borders between pictures to make it easier to tell them apart, nixed the inconsistent language around saving (“Keep” is now just “Save”), and shifted to using familiar Android-style menus at the top and bottom of the screen to make actions and navigation more intuitive (pictured above, to the right). We added the options for the user to take multiple photos at a time without needing to navigate back to the camera page and to save photos without needing to place them into a specific album to give the user more flexibility. This was all in response to peer and teaching team feedback mentioned in the Feedback portion of the report. 
             </p>
@@ -203,17 +203,17 @@
               <strong>An experience capture app using AR/VR that recreates people’s past living experience.</strong>
               Two of our three personas, Static Stacy and Sentimental Sal dislike moving because they struggle with the same problem: preserving key experiences. They struggle to hold on to their old life and they need motivation to move on to new life. Therefore, we started on this idea to focus on capturing experiences. This is an app that captures people’s experience in the form of pictures and videos, and creates an AR/VR version of the experience for people to keep and revisit whenever they want. This was an interesting idea in that it redefines what it means to experience lives from the past. That being said, there are a lot of technical limitations in how to capture enough data to create an AR/VR representation of a life in a home. Both for that and reasons relating to project scope led us to picking a different idea, but this is where we shifted our ideas into the direction of experience capture. 
             </p>
-            <p><img src="images/bill_flow.png" alt="bill sketch"></p>
+            <p><img src="bill_flow.png" alt="bill sketch"></p>
             <p>
               <strong>An app that automatically create albums for your time living in a certain place.</strong>
               This is another app that focuses on experience capture. The idea behind it was that people are busy, and people might not want to spend time and effort on taking photos and recording videos of their daily live, so this app could help them by automatically constructing an album with photos from their time living in a certain place using the photos on their phone. This seemed more feasible than the VR/AR app. However, this idea did not feel particularly new, since, for example, Google Photos will automatically construct collages or albums based on details like location and time, so we decided not to bring it to the prototype stage. For more photos of the sketches, click <a href="https://github.com/mary-keenan/UXD/blob/master/appendix/mary_home.png">here</a> and <a href="https://github.com/mary-keenan/UXD/blob/master/appendix/mary_new.png">here</a>
             </p>
-            <p><img src="images/mary_flow.png" alt="mary sketch"></p>
+            <p><img src="mary_flow.png" alt="mary sketch"></p>
             <p>
               <strong>Take this Photo (now HomePhoto).</strong>
               This is a camera app that motivates people to capture their valuable moments throughout the entire moving process. Whether it’s before the move, during the move, or after settling down at a new place, this app will help people take pictures of their family, their house, and their moving experience with templates provided in the app. The app will create albums for their past moves, and therefore making it easier for people to hold on to their old live and prepare themselves to embrace the new live. This idea addresses the deeper problem behind the logistic problems of moving that both Static Stacey and Sentimental Sal have: preserving key experiences, and the scope of this app meets our expectation. We finally decided to bring this idea to the next step after reevaluating all the other ideas.
             </p>
-            <p><img src="images/ilya_flow.png" alt="ilya sketch"></p>
+            <p><img src="ilya_flow.png" alt="ilya sketch"></p>
         </div>
       <h3>2 Paper Prototype Development</h3>
         <div class="indented">
@@ -228,7 +228,7 @@
             <p>
               From the home-page, users have a choice between accessing templates, viewing their progress in completing an album, or exploring past moves. If they want to capture a moment, the user can click into templates, select one of their choosing and use it as inspiration for their shot. Once captured, they can confirm its addition to their “current move” album. They can view this album with the “my progress” button on the home-screen. This will show them a pleasing layout with pictures they have taken and grayed-out slots of photo templates they haven’t taken yet. Below you can see an interaction flow map for our first prototype (green lines represent clicks).
             </p>
-            <p><img src="images/workflow.png" alt="workflow"></p>
+            <p><img src="workflow.png" alt="workflow"></p>
           <h4>2.3 User Needs</h4>
             <p>
               Our user needs were of clear concern in creating this initial paper prototype. Whether it is Sentimental Sal, Static Stacy or Mobile Molly who is using it, we decided to focus on an intuitive, engaging interface, capturing valuable memories and decreasing the photography skills necessary to have a pleasing output. All three of our personas are people who appreciate their lives being made easy. This inspired the high amount of automation in our design: photo templates with overlay guides that feed into pre-designed collages allow for an output users will want to share with families and friends. In addition, Sentimental Sal makes it clear how important it is to cherish what is important to us. Our “Templates” page aims to be an easy to follow guide in reminding users to capture moments they will gladly look back on in the future. 
@@ -343,7 +343,7 @@
 
       <h3>Effort Chart (for the last two phases)</h3>
         <p>We've generally all been putting in the same amount of time as each other for the various activities. We normally split tasks up, like the sketches, so that helps to make sure we're all doing each activity -- no one is ever unable to help because of scheduling conflicts.</p>
-        <p><img src="images/effort_chart.png" alt="effort" style="width:60%"></p>
+        <p><img src="effort_chart.png" alt="effort" style="width:60%"></p>
       <h2 id="design-brief">Design Brief</h2>
         <h3> The Problem </h3>
           <p>
@@ -358,13 +358,13 @@
           </p>
         <h3> Design Artifacts </h3>
           <h4> Spectrum </h4>
-            <p><img src="images/spectrum.jpg" alt="spectrum" style="width:50%"></p>
+            <p><img src="spectrum.jpg" alt="spectrum" style="width:50%"></p>
           <h4> Personas </h4>
             <table width="100%">
             <tr>
-              <td><img src="images/persona_stan.jpg" alt="persona1"></td>
-              <td align="center"><img src="images/persona_stacy.jpg" alt="persona2"></td>
-              <td align="right"><img src="images/persona_molly.jpg"></td>
+              <td><img src="persona_stan.jpg" alt="persona1"></td>
+              <td align="center"><img src="persona_stacy.jpg" alt="persona2"></td>
+              <td align="right"><img src="persona_molly.jpg"></td>
             </tr>
           </table>
 
@@ -375,16 +375,16 @@
           <p>Sortly’s app allows customers to create lists and visually document their items to make them easier to track. Users can create custom notes for each item or box and tag it by location or category. They can even create scannable QR codes to label each box with specific contents. Part of the apps functionality allows users to distinguish which items they care deeply for and which they are looking to get rid of during the move.</p>
           <h4 id="design">Design</h4>
           <p>Their website is modern and fluid, a pleasure to look through. They use a friendly, empathetic tone in addressing their customers. Their awareness of the common stress and difficulties of moving is clear. They want to make people’s lives easier and turn difficult tasks into enjoyable experiences.</p>
-          <p><img src="images/sortly2.png" alt="sortly"></p>
+          <p><img src="sortly2.png" alt="sortly"></p>
         <h3 id="magicplan-by-mary-">MagicPlan (by Mary)</h3>
           <p>MagicPlan uses pictures to create detailed floor plans, which it can then use to create quotes for construction and generate annotated reports (for those using the service for business). It allows new homeowners/renters to plan out where everything will go in their new home, so they don’t end up moving furniture or other items they’ll get rid of anyway. This approach to simplifying the moving process offers a few insights. </p>
           <p>First, not everyone will move everything from one place to another, so helping them realize what they won’t need in their new home ahead of time will make moving inherently easier (because there will be less to move). If we’re trying to help them differentiate between boxes, we can do so by decreasing the number of boxes of stuff they have. </p>
           <p>Second, manually entering information is tedious, especially if you have a large number of belongings. I was able to use the MagicPlan app to map the bathroom and living room of my suite in about three minutes once I figured out how the app worked, which was much faster than measuring each wall, entering that into some piece of software, then explaining how the walls relate to each other, and so on. We should come up with more creative ways to collect the information we need.</p>
           <p>Third, the MagicPlan app has a lot of different functionalities (like creating quotes), which could be useful, but ends up making the app feel cluttered and unintuitive. It was easy to map the rooms, but beyond that, the app was confusing -- for example, why does the app have a whole separate cost section for tax information instead of building tax information into its quoted prices? Plus, it never asked where my supposed house is, but I imagine it needs that information for taxes and I don’t know how to add my address. If I only want to create a floor plan, what information do I actually need to add? We should create a software solution to moving headaches that does its single job and nothing more to make the experience more straightforward. </p>
-          <p><img src="images/magicplan.png" alt="sortly"></p>
+          <p><img src="magicplan.png" alt="sortly"></p>
         <h3 id="moverbase-by-bill-">Moverbase (by Bill)</h3>
           <p>Moverbase is a web based software that helps manage the operation of moving companies. In order to gain access to a variety of features, moving companies need to pay 0-299 USD per month to subscribe to the software. The basic functionalities include work scheduling, job management, staff management, client management, supplies calculator and quick email services between the mover and the client. This software builds up an interface for moving companies to better manage their job. However, I can hardly see it being popular, since it is neither for big moving companies that have their own database and online software, nor for small companies that do not require such a complex cloud system to operate. There is a lot of detailed information displayed on the dashboard, but the user interface is a bit messy, and the software website looks a lot better than the dashboard. This software aims to do all the things to manage a moving company, but it doesn’t do everything very well. Furthermore, there’s no custom features that fit companies own needs. There is no review for the web version of the product and very few reviews (less than 5) on Google Play. </p>
-          <p><img src="images/moverbase.png" alt="sortly"></p>
+          <p><img src="moverbase.png" alt="sortly"></p>
         <h3 id="other-ideas">Other Ideas</h3>
           <ul>
           <li>Unpakt helps you book, manage, and pay for your move within the mobile/web app; lets you create an inventory list to see how much it’ll cost to move certain items and shows you multiple quotes</li>
