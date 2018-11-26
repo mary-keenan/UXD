@@ -8,42 +8,50 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/bob">
 
-        <include layout="@layout/activity_scrolling"
-            android:id="@+id/title_bar"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
+        <!--<include layout="@layout/activity_scrolling"-->
+            <!--android:id="@+id/title_bar"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"/>-->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/title_bar"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <ScrollView
-                android:visibility="visible"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.85"
-                android:id="@+id/scroll_view">
+            <!--<ScrollView-->
+                <!--android:visibility="visible"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:id="@+id/scroll_view">-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/description_text_size"
-                android:text="@string/large_text" />
+                <ListView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:id="@+id/albums_list_left_col">
+                </ListView>
 
-            </ScrollView>
+                <ListView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:id="@+id/albums_list_right_col">
+                </ListView>
+
+            <!--</ScrollView>-->
 
         </LinearLayout>
 
-        <include layout="@layout/activity_bottom_navigation_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+        <!--<include layout="@layout/activity_bottom_navigation_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
 
     </RelativeLayout>
 

@@ -3,7 +3,8 @@ package homephoto.homephotoapp;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +13,15 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link SpecificAlbumPage.OnFragmentInteractionListener} interface
+ * {@link SpecificAlbumPage} interface
  * to handle interaction events.
  * Use the {@link SpecificAlbumPage#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class SpecificAlbumPage extends Fragment {
+
+    public static final String TAG = "SPECIFIC_ALBUMS_PAGE";
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -27,7 +31,6 @@ public class SpecificAlbumPage extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private OnFragmentInteractionListener mListener;
 
     public SpecificAlbumPage() {
         // Required empty public constructor
@@ -67,30 +70,6 @@ public class SpecificAlbumPage extends Fragment {
         return inflater.inflate(R.layout.specific_album_page, container, false);
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
@@ -101,8 +80,8 @@ public class SpecificAlbumPage extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface OnFragmentInteractionListener {
+    public void OnFragmentInteractionListener() {
         // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+        Log.d(TAG, "we got here!");
     }
 }

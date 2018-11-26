@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="match_parent">
+    <item android:color="@color/colorSelected" android:state_enabled="true" />
+    <item android:color="@color/colorUnselected" android:state_enabled="false"/>
+</selector>

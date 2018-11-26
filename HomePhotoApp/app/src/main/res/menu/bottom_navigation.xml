@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_favorites"
+        android:id="@+id/nav_bar_albums"
         android:enabled="true"
-        android:icon="@drawable/add"
-        android:title="@string/app_name"
+        android:icon="@drawable/album"
+        android:title="@string/nav_bar_albums"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_schedules"
+        android:id="@+id/nav_bar_ideas"
         android:enabled="true"
-        android:icon="@drawable/add"
-        android:title="@string/app_name"
+        android:icon="@drawable/light_bulb"
+        android:title="@string/nav_bar_ideas"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_music"
+        android:id="@+id/nav_bar_camera"
         android:enabled="true"
-        android:icon="@drawable/user"
-        android:title="@string/app_name"
+        android:icon="@drawable/camera"
+        android:title="@string/nav_bar_camera"
         app:showAsAction="ifRoom" />
 </menu>
