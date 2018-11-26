@@ -3,56 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".AlbumsPage">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/bob">
 
-        <!--<include layout="@layout/activity_scrolling"-->
-            <!--android:id="@+id/title_bar"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_width="match_parent"/>-->
+    <!--<ScrollView-->
+        <!--android:visibility="visible"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/scroll_view">-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <!--<ScrollView-->
-                <!--android:visibility="visible"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="0dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:id="@+id/scroll_view">-->
-
-                <ListView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".5"
-                    android:id="@+id/albums_list_left_col">
-                </ListView>
-
-                <ListView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".5"
-                    android:id="@+id/albums_list_right_col">
-                </ListView>
-
-            <!--</ScrollView>-->
-
-        </LinearLayout>
-
-        <!--<include layout="@layout/activity_bottom_navigation_bar"-->
+        <!--<TextView-->
             <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentStart="true" />-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="@string/large_text"/>-->
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:id="@+id/albums_list_left_col">
+        </ListView>
 
-    </RelativeLayout>
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:id="@+id/albums_list_right_col">
+        </ListView>
+
+    <!--</ScrollView>-->
 
 </LinearLayout>

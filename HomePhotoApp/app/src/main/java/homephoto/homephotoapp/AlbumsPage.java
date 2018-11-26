@@ -31,7 +31,7 @@ public class AlbumsPage extends Fragment {
     }
 
     public void initializeView() {
-        Toolbar toolbar =  ((MainActivity) getActivity()).findViewById(R.id.toolbar);
+        Toolbar toolbar = ((MainActivity) getActivity()).findViewById(R.id.toolbar);
         ((MainActivity) getActivity()).setSupportActionBar(toolbar);
         TextView titleBar =  ((MainActivity) getActivity()).findViewById(R.id.title_bar_text);
         titleBar.setText(R.string.albums_page_title);
@@ -57,7 +57,7 @@ public class AlbumsPage extends Fragment {
                     }
                 });
 
-        //create album list view and its adapter
+        // create album list view and its adapter
         ArrayList<AlbumCell> albumCellList = new ArrayList<>();
         AlbumCell ex1 = new AlbumCell("bob", R.drawable.placeholder_picture);
         AlbumCell ex2 = new AlbumCell("joe", R.drawable.placeholder_picture);
