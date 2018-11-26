@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AlbumsPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/activity_scrolling"
+            android:id="@+id/title_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_bar"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.85"
+                android:id="@+id/scroll_view">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/description_text_size"
+                android:text="@string/large_text" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <include layout="@layout/activity_bottom_navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

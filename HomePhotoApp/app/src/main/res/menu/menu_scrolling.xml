@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AlbumsPage">
+    <item
+        android:id="@+id/title_bar_settings"
+        android:orderInCategory="100"
+        android:title="@string/title_bar_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/title_bar_add"
+        android:orderInCategory="100"
+        android:title="@string/title_bar_add"
+        app:showAsAction="never" />
+</menu>
