@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
+import android.widget.GridView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -31,10 +31,26 @@ public class AlbumsPage extends Fragment {
     }
 
     public void initializeView() {
+        // initialize tool bar
         Toolbar toolbar = ((MainActivity) getActivity()).findViewById(R.id.toolbar);
         ((MainActivity) getActivity()).setSupportActionBar(toolbar);
         TextView titleBar =  ((MainActivity) getActivity()).findViewById(R.id.title_bar_text);
         titleBar.setText(R.string.albums_page_title);
+
+        toolbar.setOnMenuItemClickListener(
+                new Toolbar.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.title_bar_settings:
+                            case R.id.title_bar_add:
+//                                ((MainActivity) getActivity()).changeFragment(new AlbumsPage(), "albumsPage");
+                            case R.id.title_bar_edit:
+                        }
+                        return true;
+                    }
+                }
+        );
 
         // initialize navigation bar
         BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.bottom_navigation);
@@ -50,31 +66,26 @@ public class AlbumsPage extends Fragment {
                         switch (item.getItemId()) {
                             case R.id.nav_bar_albums:
                             case R.id.nav_bar_ideas:
-                                ((MainActivity) getActivity()).changeFragment(new SpecificAlbumPage(), "");
                             case R.id.nav_bar_camera:
                         }
                         return true;
                     }
                 });
 
-        // create album list view and its adapter
+        // create sample album list view and its adapter
         ArrayList<AlbumCell> albumCellList = new ArrayList<>();
-        AlbumCell ex1 = new AlbumCell("bob", R.drawable.placeholder_picture);
-        AlbumCell ex2 = new AlbumCell("joe", R.drawable.placeholder_picture);
-        albumCellList.add(ex1);
-        albumCellList.add(ex2);
-        albumCellList.add(ex1);
-        albumCellList.add(ex2);
-        albumCellList.add(ex1);
-        albumCellList.add(ex2);
-        albumCellList.add(ex1);
-        ListView albumCellLeftLV = view.findViewById(R.id.albums_list_left_col);
-        ListView albumCellRightLV = view.findViewById(R.id.albums_list_right_col);
-        final AlbumCellAdapter albumCellAdapterLeft = new AlbumCellAdapter(getActivity(), albumCellList);
-        final AlbumCellAdapter albumCellAdapterRight = new AlbumCellAdapter(getActivity(), albumCellList);
-        albumCellLeftLV.setAdapter(albumCellAdapterLeft);
-        albumCellRightLV.setAdapter(albumCellAdapterRight);
-
+        AlbumCell album_one = new AlbumCell("Raleigh 2009", R.drawable.album_cover_1);
+        AlbumCell album_two = new AlbumCell("Tacoma 2014", R.drawable.album_cover_2);
+        AlbumCell album_three = new AlbumCell("Loudon County 2017", R.drawable.album_cover_3);
+        AlbumCell album_four = new AlbumCell("Derek's move home to Raleigh!", R.drawable.album_cover_4);
+        AlbumCell album_five = new AlbumCell("Carol's Tacoma cutie", R.drawable.album_cover_5);
+        albumCellList.add(album_one);
+        albumCellList.add(album_two);
+        albumCellList.add(album_three);
+        albumCellList.add(album_four);
+        albumCellList.add(album_five);
+        GridView albumCellGV = view.findViewById(R.id.albums_grid);
+        final AlbumCoverAdapter albumCoverAdapter = new AlbumCoverAdapter(getActivity(), albumCellList);
+        albumCellGV.setAdapter(albumCoverAdapter);
     }
-
 }

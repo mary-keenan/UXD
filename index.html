@@ -16,7 +16,128 @@
       <h2 class="project-tagline">Helping You Move Since 2018</h2>
     </section>
 
-    <section class="main-content">
+<section class="main-content">
+
+    <h2 id="design-brief">Final Refinement Report</h2>
+      <h3>1 Introduction</h3>
+	      <p>
+	      	We entered the final phase of our project with a prototype that already reflected the feedback we had received from our teaching team and peers (in the form of the heuristic evaluation). As a result, we did not make large adjustments to our prototype from the previous phase, but rather we continued to seek feedback on our design through usability studies and make small improvements. Our final design for this project is still an incomplete work, but we are confident that it reflects our users’ needs and lays a solid foundation for any future work.
+	      </p>
+      <h3>2 Formal Usability Study </h3>
+	    <p>
+	      We conducted a formal usability study with two college students to determine whether we should use a Floating Action Button (FAB) for the most important context-dependent actions for applicable screens (like, for example, the albums page but not the camera). Before testing, we determined the goal and parameters of the test as well as wrote a testing script to create consistency between testing sessions, and thus, make it easier to compare results. After we finished testing, we examined the results and identified a few key takeaways.
+	     </p>
+        <div class="indented">
+          <h4>2.1 Testing Documentation</h4>
+            <p>
+            	We created two documents for our formal usability study, a testing plan and a script. The <a href="https://github.com/mary-keenan/UXD/blob/master/appendix/Formal_Usability_Study_Plan.docx">testing plan</a>, laid out our goal, hypothesis, and design. The goal of our study was to “determine whether using a top app bar or a top app bar and FAB combination is preferential for context-dependent actions.” This particular topic was something our team had been divided on in the previous phase, and while we had decided to proceed with a FAB-less design, we believed it was worth revisiting that choice in this final refinement phase. We chose to conduct an A/B test with the existing FAB-less top app bar design as option A and the top app bar and FAB combination as option B. We decided to measure both how our users felt about the two designs as well as how quickly they were able to complete sets of tasks to get qualitative and quantitative feedback. 
+            </p>
+            <p>
+            	We also wrote a <a href="https://github.com/mary-keenan/UXD/blob/master/appendix/Formal_Usability_Study_Plan.docx">simple script</a> (at the bottom of the Plan document) to standardize the testing across users. The script contains an introduction to our project and specific product to give the user some context. It also includes a small list of tasks that we ask the user to complete, first with one design, then the other. While conducting the study, we varied which design was shown first to minimize ordering-related bias (the first user had A → B while the second had B → A). We timed the user as they completed these tasks, and at the conclusion of the study, we asked the user which design they had preferred, how much they preferred it, and why. We then thanked the user and offered them our contact information in case they later thought of more feedback.
+            </p>
+          <h4>2.2 Results</h4>
+            <p>
+            	We conducted the test with three users. Two of the three users preferred the design that included the FAB, because it was easier and faster to tap, especially on large phones. They thought the hamburger menu should be relegated to secondary actions like settings and logging out. However, they did not like the look of the FAB and suggested it be incorporated into the bottom navigation bar. The third user preferred the FAB-less design, because it looked clean and fit the iPhone design aesthetic, which does not commonly use FABs. 
+        	</p>
+    	    <p>
+    	    	The quantitative data as to how quickly the user was able to complete certain actions ended up being too difficult to accurately collect. As a result, we are not considering it.
+    		</p>
+          <h4>2.3 Limitations</h4>
+            <p>
+				The results of our formal usability study need to be considered cautiously since our study had such a small sample size and skewed sample group, consisting of three white or asian college students. Our usability test was also only conducted by one person, which made accurately timing the users’ actions very difficult, especially since the tasks were so short.
+            </p>
+        </div>
+      <h3>3 Informal Usability Study</h3>
+        <p>
+      		We conducted an informal usability study on the use of the FAB in tandem with the formal study. Since this study was more hands-off, we were able to reach more users. However, the test was also simpler and arguably less informative because the platform did not allow tests to be longer than two minutes or for us to follow up with any test subjects. We were able, however, to identify a few points of confusion in the app’s design as well as get a general sense for which design the users preferred.
+        </p>
+        <div class="indented">
+          <h4>3.1 Testing Documentation</h4>
+            <p>
+        		We used UsabilityHub to conduct our informal usability study. We instructed our users to complete four Navigation Tests with the following prompts.
+            </p>
+            <ol>
+	            <li>Option A (FAB-less): “How would you add a new album?”</li>
+	            <li>Option A (FAB-less): “How would you add a new picture to this album?”</li>
+	            <li>Option B (FAB): “How would you add a new album?”</li>
+	            <li>Option B (FAB): “How would you add a new picture to this album?”</li>
+            </ol>
+            <p>
+            	For each Navigation Test, the users were presented with the relevant page (ex. For #1, they started on the FAB-less Albums page). They clicked the area of the screen they thought would help them complete their task, and if they selected something in the pre-specified “hitzone”, they moved to the next frame and again, made a guess as to where they should click to complete their task. If a user selected an area outside of the “hitzone”, that individual Navigation Test finished. Each user was presented the four tests in the same order, as the free version of the platform did not allow us to make a variation set to change the order for different users.
+            </p>
+          <h4>3.2 Results</h4>
+            <p>
+            	We were fortunate that 60 people participated in the informal usability study, which means we were able to collect a fair amount of data. However, the results were far from conclusive. When asked “How would you add a new album?” in Test #1 (Option A), 31 of the 60 participants correctly selected the hamburger menu in the first step. When asked the same question in Test #3 (Option B), 30 of the 60 participants correctly selected the FAB button in the first step; both Tests had a roughly 100% correct click rate for the second step of the task. In other words, the FAB-less and FAB designs were essentially equally intuitive when it came to adding new albums.
+            </p>
+            <p>
+            	There was more disparity between Option A and Option B in the “How would you add a new picture to this album?” task. Only 26.4% of users successfully added a new picture for Option A, whereas 50% of users were successful for Option B. While this suggests that the FAB design was more intuitive for the second task, the success rate is still disappointingly low and suggests that neither design is particularly intuitive. 
+            </p>
+          <h4>3.3 Limitations </h4>
+            <p>
+            	The study had a number of limitations. The most prominent limitation was that all 60 users took the exact same version of the overall test. We were unable to vary the order of the individual Navigation Tests, which means ordering bias likely affected our results. For example, the 30 users who did not correctly select the FAB button in Navigation Test #3 all selected the hamburger menu; the clicks are visualized in the screen below with the hitzone marked by a green box. Was that because they had already completed the same task (“How would you add a new album?”) in Navigation Test #1 by selecting the hamburger menu? Possibly, but without a set of test results where Test #3 was offered before Test #1, it is impossible to say if Test #1 influenced the outcome of Test #3. 
+            </p>
+            <p><img src="final_test_fab.png" alt="test FAB"/></p>
+            <p>
+	            Another limitation of this study is that we had no opportunity to check in with our users when they did something we did not understand, because they took the test on their own. This makes it more difficult to interpret some of the results.
+            </p>
+        </div>
+
+      <h3>4 Final Design</h3>
+        <p>
+        	Overall, our final design differs little from our refined design in the last phase, but it is more fleshed out and reflects the additional feedback we received during our usability studies. We did not implement as many features or get as far in the development of the app as we had hoped we would by this point, but we do believe that our design is well-grounded in our findings from earlier phases and reflects our users’ needs. It’s imperfect and incomplete, but we believe our app has promise and shows evidence of good design work (or at least, a good attempt at it!).
+        </p>
+        <div class="indented">
+          <h4>4.1 Functionality and Flow</h4>
+            <p>
+            	When a user opens the app, they are presented with the Your Experiences page that lists their existing albums in a gridview -- this page is pictured below. From this page, the user can navigate with a single click to the camera page or the Ideas workflow using the bottom navigation bar. A FAB is available for the highest priority actions for the page. The share icon in the top app bar transitions the user into the Share workflow and the next-door skinnylicious hamburger menu presents further actions. This format -- the bottom navigation bar, context-dependent FAB, and additional top app bar actions -- is generally consistent across the app. 
+            </p>
+            <p><img src="final_home_page.png" alt="home page"></p>
+            <p>
+            	The chart below shows the available actions in-app and how they interact with each other. The Your Experiences page encompasses the “view albums” action and serves as a doorway to the two other primary actions, “take photos” and “take ideas survey”, as well as the various album-specific actions highlighted in yellow. It is intentionally easy to navigate from one “side” of the app to the other; in fact, every page in the app is one or two clicks from “view albums” and at most four clicks from another action in the workflow. This hopefully makes the app quick and simple to use, as the functionality is fairly centralized. 
+            </p>
+            <p><img src="final_workflow_diagram.png" alt="workflow"></p>
+          <h4>4.2 Key Decisions</h4>
+            <p>
+        	    There were a number of decisions we made throughout this project that define or feature prominently in our final design. We decided to remove the home page and overhaul the navigation workflow in response to the heuristic evaluation feedback we received in the Design Refinement phase. Our peers felt that using the home page to navigate between the two central functions of our app -- taking photos and viewing/editing them -- was cumbersome. As a result, we nixed the home page and introduced a bottom navigation bar in the app, so wherever the user is (except if they are actively taking a photo), they can get to the other most important pages with a single click. The app opens on the albums page, because that is where we think our users will spend most of their time -- looking at their photos. This change was made in conjunction with the teaching team’s suggested Android-style restyle, which we felt would make our design feel more familiar to users.
+            </p>
+            <p>
+            	Another key decision we made was to replace Templates with Ideas. We received feedback that the concept of templates was confusing in both the Design Development and Design Refinement phases, so we had a lengthy team discussion on how to preserve our app’s uniqueness while also creating a positive, intuitive user experience. We decided that the less-intrusive Ideas workflow would be more intuitive, because people are used to taking surveys that give them suggestions. As a result, our users would likely not be surprised if clicking the “Ideas” option in the bottom navigation bar took them to a survey that outputted a list of picture ideas.
+            </p>
+            <p>
+            	We also decided to revamp how context-dependent actions are presented to users by adding a FAB for the most important actions on relevant pages (ex. not the camera page because there is only one option for an action -- taking the photo). This choice was in response to the results of our formal and informal usability studies, which indicated that our original FAB-excluded layout was slightly less intuitive than our proposed FAB-included layout.
+            </p>
+          <h4>4.3 User Needs</h4>
+            <p>
+            	Our users are busy. Molly is exploring, Stacy is crafting, and Sal is raising a family. On top of that, they are all studying or working full-time. To meet our users’ needs, HomePhoto needs to be quick and easy to use, and it needs to be useful. 
+            </p>
+            <p>
+            	We believe that the thumb-level navigation, easy access to major actions (through the FAB and hamburger menu), and interconnectedness of our workflow enables quick use. Using Android-style top and bottom bars and a FAB presents our users options in a familiar format, which also improves the speed of use.
+            </p>
+            <p>
+            	We improve the ease of use by opening on the Your Experiences page and making it a focal point in the workflow, because it reflects how our users will spend their time in the app. People spend more time looking at a photo than they do capturing or editing it, so it seems logical to conclude that our users will spend more time on the “view albums” action than they will on any other action in our workflow. Sal only takes photos so he can look at them later when he feels reminiscent, and Molly is all about capturing her adventures so she can later revisit her wild ride. When they open HomePhoto, they are most likely intending to view their old albums, and we cut to the chase by starting them there. On top of this, the Your Experiences page offers a quick shortcut to the “take photos” and “take ideas survey” actions in case our user is trying to capture something time-sensitive, like his son trying to “pack” his sister in a moving box.
+            </p>
+            <p>
+            	HomePhoto proves its usefulness with its Ideas workflow. Sentimental Sal occasionally thinks about all of the memories he should have captured of his children growing up in their first home, and Mobile Molly hates it when she’s describing one of her experiences, but has nothing to show for it. HomePhoto makes itself useful by offering our users suggestions for photos they will later wish they had taken. It asks for their context -- where they are and who they are with -- and it gives them a list of photos they could capture. If Sal is taking a break from packing with his family, HomePhoto might present a list of options that includes capturing “packing playtime!” Sal could then take a photo of his children playing with the boxes, or be inspired to capture something else. HomePhoto does not dictate what pictures our users should take, but rather it provides recommendations when our users decide they want them. At the very least, it provides a jumping off point for Sal, Molly, and Stacy, who may be too scatterbrained to think about which memories they will cherish in the future.
+            </p>
+        <h4>4.3 Limitations</h4>
+            <p>
+            	Given our team size and the short duration of this project, our final design is not a complete design -- nor is it necessarily a great design. We never had the time to implement all of the customization features our users asked for in earlier phases or flesh out features like the settings page; there were always more important, more essential things we had to implement or adjust or test. We did not receive comprehensive feedback on our final design, so we do not know if, for example, replacing Templates with Ideas actually improved our app. We believe it has, but we have no proof. 
+            </p>
+            <p>
+            	When we did user testing, it was primarily with small groups of white or asian female college students who were not our target users. As a result, most of our test results and feedback were likely biased and inaccurate. The sole exception, our informal usability study did include a much larger, presumably more diverse group of college students (60 people). However, while that study was helpful in showing that the FAB-included design had higher task success rates than the FAB-excluded design, it also revealed something concerning; neither design had above a 50% success rate for either of the tasks. In other words, our app was not intuitive to half of our prospective users. We received these results shortly before the end of the semester and were unable to do more user testing to identify what the source(s) of the problem was for that half of our user group. Our app has a number of known shortcomings, and unfortunately, we think there may be many more that are unknown.
+            </p>
+        </div>
+
+      <h3>5 Future Work</h3>
+        <p>
+        	There are many ways our final design could be improved or built upon. There are simple additions, like determining what options the user should have in the settings page and what the settings page should look like, as well as more time-intensive projects like developing the app in Android Studios, setting up persistent storage, and continuing to do usability tests. These are all essential to reaching a production-fit app, but we have identified a few of the most interesting or important projects below that we wish we could have gotten to in the course of the project.
+        </p>
+        <ul>
+            <li>Created an accessibility mode for visually impaired users (switch to better colors for color-blind people, help the user take photos, etc).</li>
+            <li>Designed an export workflow (give the user the option to export as a photo album in case they want to print it, or as a collage or grid, etc).</li>
+            <li>Optimized our app for other platforms (how should we allocate the additional screen space? Should we place the navigation bar somewhere else or nix the FAB?, etc).</li>
+        </ul>
+    
 
     <h2 id="design-brief">Design Refinement Report</h2>
       <h3>1 Initial Exploration</h3>

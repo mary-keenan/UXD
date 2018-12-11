@@ -9,13 +9,22 @@
         android:layout_centerInParent="true"
         android:orientation="vertical">
         <ImageButton
-            android:layout_width="@dimen/album_image_width"
-            android:layout_height="@dimen/album_image_height"
-            android:id="@+id/album_cell"
+            android:layout_width="@dimen/cover_image_width"
+            android:layout_height="@dimen/cover_image_height"
+            android:id="@+id/album_cover"
             android:background="@color/colorBackground"
             android:src = "@drawable/album_cover_1"
             android:scaleType="centerCrop"
             android:layout_gravity="center" />
+        <TextView
+            android:layout_width="@dimen/cover_image_width"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_text"
+            android:id="@+id/album_name"
+            android:layout_marginBottom="7dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/title_text_size"/>
     </LinearLayout>
 
 </RelativeLayout>

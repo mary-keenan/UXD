@@ -3,35 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".AlbumsPage">
 
-
-    <!--<ScrollView-->
-        <!--android:visibility="visible"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="1"-->
-        <!--android:id="@+id/scroll_view">-->
-
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:text="@string/large_text"/>-->
-        <ListView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".5"
-            android:id="@+id/albums_list_left_col">
-        </ListView>
-
-        <ListView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".5"
-            android:id="@+id/albums_list_right_col">
-        </ListView>
-
-    <!--</ScrollView>-->
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/albums_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:verticalScrollbarPosition="right"
+        android:scrollbars="vertical">
+    </GridView>
 
 </LinearLayout>

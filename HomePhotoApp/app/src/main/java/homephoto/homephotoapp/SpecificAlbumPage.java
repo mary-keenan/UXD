@@ -3,85 +3,106 @@ package homephoto.homephotoapp;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link SpecificAlbumPage} interface
- * to handle interaction events.
- * Use the {@link SpecificAlbumPage#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class SpecificAlbumPage extends Fragment {
 
     public static final String TAG = "SPECIFIC_ALBUMS_PAGE";
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-
-    public SpecificAlbumPage() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment SpecificAlbumPage.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static SpecificAlbumPage newInstance(String param1, String param2) {
-        SpecificAlbumPage fragment = new SpecificAlbumPage();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    private String albumName;
+    View view;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            albumName = getArguments().getString("name");
         }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.specific_album_page, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.specific_album_page, container, false);
+        initializeView();
+        return view;
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p/>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public void OnFragmentInteractionListener() {
-        // TODO: Update argument type and name
-        Log.d(TAG, "we got here!");
+    public void initializeView() {
+        // initialize tool bar
+        Toolbar toolbar = ((MainActivity) getActivity()).findViewById(R.id.toolbar);
+        ((MainActivity) getActivity()).setSupportActionBar(toolbar);
+        TextView titleBar =  ((MainActivity) getActivity()).findViewById(R.id.title_bar_text);
+        titleBar.setText(albumName);
+        Menu menu = toolbar.getMenu();
+        MenuItem addItem = menu.findItem(R.id.title_bar_add);
+        addItem.setTitle("bob"); //TODO problem here -- not working
+        // https://stackoverflow.com/questions/33284812/android-change-navigation-drawer-menu-items-text-programmatically
+
+        toolbar.setOnMenuItemClickListener(
+                new Toolbar.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.title_bar_settings:
+                            case R.id.title_bar_add:
+//                                ((MainActivity) getActivity()).changeFragment(new AlbumsPage(), "albumsPage");
+                            case R.id.title_bar_edit:
+                        }
+                        return true;
+                    }
+                }
+        );
+
+        // initialize navigation bar
+        BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.bottom_navigation);
+        View ideasIcon = getActivity().findViewById(R.id.nav_bar_ideas);
+        View cameraIcon = getActivity().findViewById(R.id.nav_bar_camera);
+        ideasIcon.setEnabled(false);
+        cameraIcon.setEnabled(false);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.nav_bar_albums:
+                                ((MainActivity) getActivity()).changeFragment(new AlbumsPage(), "albumsPage");
+                            case R.id.nav_bar_ideas:
+                            case R.id.nav_bar_camera:
+                        }
+                        return true;
+                    }
+                });
+
+        // create sample album list view and its adapter
+        ArrayList<AlbumCell> albumCellList = new ArrayList<>();
+        AlbumCell album_one = new AlbumCell("", R.drawable.album_picture_1);
+        AlbumCell album_two = new AlbumCell("", R.drawable.album_picture_2);
+        AlbumCell album_three = new AlbumCell("", R.drawable.album_picture_3);
+        AlbumCell album_four = new AlbumCell("", R.drawable.album_cover_4);
+        AlbumCell album_five = new AlbumCell("", R.drawable.album_cover_5);
+        albumCellList.add(album_one);
+//        albumCellList.add(album_two);
+//        albumCellList.add(album_three);
+//        albumCellList.add(album_four);
+//        albumCellList.add(album_five);
+        GridView albumCellGV = view.findViewById(R.id.specific_album_grid);
+        final AlbumCellAdapter albumCellAdapter = new AlbumCellAdapter(getActivity(), albumCellList, albumName);
+        albumCellGV.setAdapter(albumCellAdapter);
+
     }
 }

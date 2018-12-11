@@ -7,15 +7,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
 
 public class AlbumCellAdapter extends ArrayAdapter<AlbumCell> {
 
-    public AlbumCellAdapter(Context context, ArrayList<AlbumCell> albumCells) {
+    String albumName;
+
+    public AlbumCellAdapter(Context context, ArrayList<AlbumCell> albumCells, String name) {
         super(context, 0, albumCells);
+        albumName = name;
     }
 
     @Override
@@ -26,26 +28,21 @@ public class AlbumCellAdapter extends ArrayAdapter<AlbumCell> {
             view = LayoutInflater.from(getContext()).inflate(R.layout.album_cell_item, parent, false);
         }
 
-        final TextView albumName = view.findViewById(R.id.album_name);
-        albumName.setText(albumCell.getName());
+        final ImageButton picture = view.findViewById(R.id.album_cell);
+        picture.setImageResource(albumCell.getAlbumCoverResId());
 
-        final ImageButton albumCover = view.findViewById(R.id.album_cover);
-        albumCover.setImageResource(albumCell.getAlbumCoverResId());
-
-        //if cell is clicked, go to SpecificAlbumPage fragment
-        albumName.setOnClickListener(new View.OnClickListener() {
+        //if the picture is clicked, go to SpecificPhotoPage fragment
+        picture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SpecificAlbumPage specificAlbumFragment = new SpecificAlbumPage();
+                PicturePage picturePage = new PicturePage();
                 Bundle bundle = new Bundle();
-                String albumNameTrimmed = ((String) albumName.getText()).replace("#","").replace(" ","");
-                bundle.putString("name", albumNameTrimmed);
-                specificAlbumFragment.setArguments(bundle);
-                ((MainActivity) getContext()).changeFragment(new SpecificAlbumPage(), "expandedHashtagPage"); //changes fragments
+                bundle.putString("name", albumName);
+                bundle.putInt("id", albumCell.getAlbumCoverResId());
+                picturePage.setArguments(bundle);
+                ((MainActivity) getContext()).changeFragment(picturePage, "picturePage");
             }
         });
-
-
 
         return view;
     }
